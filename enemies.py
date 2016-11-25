@@ -73,7 +73,7 @@ class Troll(Enemy):
         return answer == self.__answer
 
 class RandomTroll(Troll):
-    
+
     def __init__(self):
         self._health = 200
         self._attack = 10
@@ -81,8 +81,9 @@ class RandomTroll(Troll):
 
     def question(self):
         x = randint(1, 5)
-        self.__quest = str('Угадай число от 1 до 5')
+        self.__quest = 'Угадай число от 1 до 5'
         self.set_answer(x)
+        return self.__quest
 
 """class SimpleTroll(Troll):
     def __init__(self):
